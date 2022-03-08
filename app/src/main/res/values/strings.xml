@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GsChat</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
 </resources>
