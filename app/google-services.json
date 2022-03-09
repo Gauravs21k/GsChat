@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "307132904369",
+    "project_id": "gschat-e9201",
+    "storage_bucket": "gschat-e9201.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307132904369:android:3d183cc7e112f67b414390",
+        "android_client_info": {
+          "package_name": "com.gaurav.gschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307132904369-6554vvlp2bgvhh4e2pbki1qto23lqdo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvKWuCPYblI5zTv1c49RkJYrkxUG43q4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307132904369-6554vvlp2bgvhh4e2pbki1qto23lqdo9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

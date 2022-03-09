@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_centerVertical="true"
-        android:hint="username"
+        android:hint="Name"
         android:background="@drawable/edit_background"
         android:padding="10dp"/>
 
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/name"
         android:layout_marginTop="16dp"
-        android:hint="Name"
+        android:hint="username"
         android:background="@drawable/edit_background"
         android:padding="10dp"/>
 
