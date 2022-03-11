@@ -8,6 +8,10 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_user_list.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/list_item_user.xml" value="0.19375" />
+        <entry key="app/src/main/res/menu/activity_main.xml" value="0.19375" />
       </map>
     </option>
   </component>
