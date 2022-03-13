@@ -77,7 +77,6 @@ class MainActivity : AppCompatActivity() {
         override fun getItemCount(): Int {
             return users.size
         }
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
