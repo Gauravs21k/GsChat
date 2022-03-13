@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        userList = ArrayList();
+        userList = ArrayList()
         userAdapter = UserAdapter(this, userList)
         userAuth = FirebaseAuth.getInstance()
         databaseReference = FirebaseDatabase.getInstance().reference
@@ -45,12 +45,12 @@ class MainActivity : AppCompatActivity() {
             override fun onCancelled(error: DatabaseError) {
                 TODO("Not yet implemented")
             }
-
         })
 
     }
 
-    class UserViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
+    class UserViewHolder(itemView : View, val context: Context): RecyclerView.ViewHolder(itemView) {
+        private lateinit var user: User
         val textName = itemView.findViewById<TextView>(R.id.user_title)
     }
 
@@ -60,12 +60,18 @@ class MainActivity : AppCompatActivity() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
             val view : View = LayoutInflater.from(context)
                 .inflate(R.layout.list_item_user, parent, false)
-            return UserViewHolder(view)
+            return UserViewHolder(view, context)
         }
 
         override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
             val user = users[position]
-            holder.textName.text = user.name;
+            holder.textName.text = user.name
+            holder.itemView.setOnClickListener{
+                val intent = Intent(context, ChatActivity::class.java)
+                intent.putExtra("name", user.name)
+                intent.putExtra("uid", user.uid)
+                context.startActivity(intent)
+            }
         }
 
         override fun getItemCount(): Int {
